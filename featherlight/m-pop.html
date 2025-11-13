@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Mockup - Figma Prototype</title>
+  <style>
+    .mockup {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .m-mockup {
+      width: 360px;
+      height: 740px;
+      position: relative;
+      background: #ddd;
+      border-radius: 30px;
+    }
+
+    .m-mockup::before {
+      content: "";
+      width: 93%;
+      height: 96.5%;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 21px;
+    }
+
+    .iframe-url {
+      border: 1px solid #ddd;
+      width: 300px;
+      height: 570px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+      border-radius: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .home-btn {
+      border: 1px solid #999;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      bottom: 27px;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .home-btn::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 5px #999 inset;
+      border-radius: 50%;
+    }
+
+    .camera {
+      position: absolute;
+      width: 360px;
+      height: 50px;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .camera span {
+      position: absolute;
+      background: #999;
+    }
+
+    .camera span:nth-child(1) {
+      width: 65px;
+      height: 6px;
+      border-radius: 10px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .camera span:nth-child(2) {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .camera span:nth-child(3) {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      top: 50%;
+      left: 120px;
+      transform: translateY(-50%);
+    }
+
+    .volume {
+      position: absolute;
+      width: 7px;
+      height: 130px;
+      top: 80px;
+      right: calc(100% - 1px);
+    }
+
+    .volume span {
+      background: #ccc;
+      position: absolute;
+      width: 100%;
+      height: 30px;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .volume span:nth-child(1) {
+      top: 0;
+      height: 25px;
+    }
+
+    .volume span:nth-child(2) {
+      bottom: 50px;
+    }
+
+    .volume span:nth-child(3) {
+      bottom: 0;
+    }
+
+    .power {
+      position: absolute;
+      width: 7px;
+      height: 30px;
+      top: 80px;
+      left: 100%;
+    }
+
+    .power span {
+      background: #ccc;
+      position: absolute;
+      width: 100%;
+      height: 40px;
+      border-radius: 0 4px 4px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="mockup">
+    <div class="m-mockup">
+      <div class="iframe-url">
+        <iframe 
+          src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/9appHtuAZbpNSXn2qdEWVh/%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%EB%94%94%EC%9E%90%EC%9D%B8-%EA%B0%9C%EC%9D%B8-?node-id=196-866&t=QfZQzM0RjQutCOs2-1&scaling=contain&content-scaling=fixed&page-id=0%3A1"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <div class="home-btn"></div>
+      <div class="camera">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="volume">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="power">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
